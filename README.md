@@ -6,7 +6,7 @@ Pièces que j'ai modélisées sur Autodesk Inventor, puis imprimées en PLA sur 
 
 | Dossier | Pièces |
 |---|---|
-| `stl/drone/` | Châssis de drone 2,5", garde d'hélices, support de l'AIO, protection de l'AIO du Flywoo LR4 (version 6) |
+| `stl/drone/` | Châssis du micro-drone Matrix HD, garde d'hélices, support de l'AIO, protection de l'AIO du Flywoo LR4 (version 6) |
 | `stl/cuisine/` | Support pour salière et poivrière, versions 1 et 2 |
 | `stl/rangement/` | Boîte de rangement pour un jouet |
 | `rendus/` | Rendus 3D des pièces |
@@ -17,17 +17,16 @@ Pièces que j'ai modélisées sur Autodesk Inventor, puis imprimées en PLA sur 
 
 | Pièce | Dimensions | Rôle |
 |---|---|---|
-| Châssis | 104 × 104 × 12 mm | Châssis en croix d'un drone 2,5" |
+| Châssis | 104 × 104 × 12 mm | Châssis en X du micro-drone Matrix HD (classe 75 mm) |
 | Garde d'hélices | 123 × 123 × 16 mm | Entoure les hélices pour les protéger |
 | Support de l'AIO | 41 × 41 × 3 mm | Plaque de fixation de la carte AIO |
 
-**Place des hélices sur le châssis.** On mesure les distances entre les centres des moteurs :
+**Place des moteurs et des hélices.** Les moteurs se fixent sur les quatre motifs de trous situés aux sommets d'un carré de 50 mm de côté.
 
-- entre deux moteurs opposés : 101,6 mm ;
-- entre deux moteurs voisins : 73,3 mm ;
-- une hélice de 2,5" mesure 2,5 × 25,4 = 63,5 mm de diamètre ;
-- deux hélices voisines tournent chacune dans un cercle de 63,5 / 2 = 31,75 mm de rayon ;
-- jeu entre deux hélices voisines : 73,3 − 2 × 31,75 = 73,3 − 63,5 = 9,8 mm.
+- Distance entre deux moteurs voisins : 50,0 mm.
+- Distance entre deux moteurs opposés : 50 × √2 = 50 × 1,414 ≈ 70,7 mm. C'est la taille d'un micro-drone de classe 75 mm.
+- Deux hélices voisines ne doivent pas se toucher. La somme de leurs deux rayons doit donc rester inférieure à 50 mm, soit un diamètre inférieur à 50 mm.
+- Les trous de 5 mm en bout de bras reçoivent les plots de la garde d'hélices. Ils sont à (2 × 47,6) × √2 ≈ 134,6 mm en diagonale.
 
 ### Protection de l'AIO du LR4
 
@@ -70,7 +69,7 @@ Le volume se calcule directement à partir du maillage STL. Multiplié par la ma
 
 ## Imprimé, mais pas conçu par moi
 
-J'ai aussi imprimé un châssis 2,5" compatible Kayoumini, téléchargé sur MakerWorld. Ses fichiers ne sont pas dans ce dépôt, car ils appartiennent à leur auteur : [page du modèle sur MakerWorld](https://makerworld.com/fr/models/2745750).
+J'ai aussi imprimé un châssis 2,5" compatible Kayoumini, téléchargé sur MakerWorld. Ses moteurs sont à 111,8 mm en diagonale. Ses fichiers ne sont pas dans ce dépôt, car ils appartiennent à leur auteur : [page du modèle sur MakerWorld](https://makerworld.com/fr/models/2745750).
 
 ## Licence
 
